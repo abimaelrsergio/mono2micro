@@ -7,4 +7,8 @@ import jakarta.persistence.Entity;
 public class Hotel extends PanacheEntity {
     public Long travelOrderId;
     public Integer nights;
+
+    public static Hotel findByTravelOrderId(Long travelOrderId) {
+        return find("travelOrderId", travelOrderId).firstResult();
+    }
 }
