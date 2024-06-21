@@ -1,7 +1,4 @@
-package com.abimael.order;
-
-import com.abimael.flight.Flight;
-import com.abimael.hotel.Hotel;
+package com.abimael.travelorder;
 
 public class TravelOrderDTO {
     private String fromAirport;
@@ -23,7 +20,7 @@ public class TravelOrderDTO {
         if (hotel == null) {
             hotel = new Hotel();
         }
-        return new TravelOrderDTO(flight.fromAirport, flight.toAirport, hotel.nights);
+        return new TravelOrderDTO(flight.getFromAirport(), flight.getToAirport(), hotel.getNights());
     }
 
     private static TravelOrderDTO of(String fromAirport, String toAirport, Integer nights) {
