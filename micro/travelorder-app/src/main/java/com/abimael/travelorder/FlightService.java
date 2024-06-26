@@ -14,7 +14,7 @@ import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Timeout;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-@RegisterRestClient(baseUri = "http://localhost:8081/flight")
+@RegisterRestClient(baseUri = "http://flight-app-abimaelr-sergio-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/flight")
 public interface FlightService {
 
     @GET

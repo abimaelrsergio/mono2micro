@@ -14,7 +14,7 @@ import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Timeout;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
-@RegisterRestClient(baseUri = "http://localhost:8082/hotel")
+@RegisterRestClient(baseUri = "http://hotel-app-abimaelr-sergio-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/hotel")
 public interface HotelService {
 
     @GET
